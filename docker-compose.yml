@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: menu_ar_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: menu_ar_db
+      POSTGRES_USER: menu_ar_user
+      POSTGRES_PASSWORD: menu_ar_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U menu_ar_user -d menu_ar_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:

@@ -8,9 +8,20 @@
     "build": "tsc --build",
     "dev": "tsc --build --watch",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"No test defined yet\""
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:migrate": "ts-node src/migrate.ts",
+    "db:seed": "ts-node src/seeds/seed.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.38.4",
+    "postgres": "^3.4.5"
   },
   "devDependencies": {
-    "@menu-ar/config": "workspace:*"
+    "@menu-ar/config": "workspace:*",
+    "dotenv": "^16.4.7",
+    "drizzle-kit": "^0.30.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }
