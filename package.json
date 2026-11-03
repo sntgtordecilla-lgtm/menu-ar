@@ -1,0 +1,19 @@
+{
+  "name": "menu-ar-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Menú AR, pedidos en mesa y cobros para restaurante en Argentina",
+  "scripts": {
+    "build": "pnpm --recursive run build",
+    "dev": "pnpm --recursive --parallel run dev",
+    "lint": "pnpm --recursive run lint",
+    "typecheck": "pnpm --recursive run typecheck",
+    "test": "pnpm --recursive run test"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@menu-ar/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "nest build",
+    "dev": "nest start --watch",
+    "start": "nest start",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@menu-ar/shared": "workspace:*",
+    "@menu-ar/db": "workspace:*"
+  },
+  "devDependencies": {
+    "@menu-ar/config": "workspace:*"
+  }
+}
