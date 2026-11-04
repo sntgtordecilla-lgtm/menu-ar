@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "nest build",
+    "build": "pnpm --filter @menu-ar/db run build && nest build",
     "dev": "nest start --watch",
     "start": "nest start",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
@@ -30,4 +30,3 @@
     "typescript": "^5.3.3"
   }
 }
-
