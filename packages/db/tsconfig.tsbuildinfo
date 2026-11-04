@@ -1,1 +1,1 @@
-{"root":["./src/index.ts"],"version":"5.9.3"}
+{"root":["./src/client.ts","./src/index.ts","./src/migrate.ts","./src/schema/assets.ts","./src/schema/audit.ts","./src/schema/enums.ts","./src/schema/fiscal.ts","./src/schema/index.ts","./src/schema/menu.ts","./src/schema/orders.ts","./src/schema/payments.ts","./src/schema/relations.ts","./src/schema/settings.ts","./src/schema/tables.ts","./src/schema/users.ts","./src/schema/webhooks.ts","./src/seeds/seed.ts"],"version":"5.9.3"}
