@@ -2,9 +2,13 @@ import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
 import * as schema from './schema';
 
-const connectionString = process.env.DATABASE_URL || 'postgresql://menu_ar_user:menu_ar_password@localhost:5432/menu_ar_db';
+/** Creates an isolated database connection using the URL supplied by the application. */
+export function createDatabase(connectionString: string) {
+  const queryClient = postgres(connectionString);
+  const db = drizzle(queryClient, { schema });
 
-export const queryClient = postgres(connectionString);
-export const db = drizzle(queryClient, { schema });
+  return { db, queryClient };
+}
 
-export type Database = typeof db;
+export type DatabaseConnection = ReturnType<typeof createDatabase>;
+export type Database = DatabaseConnection['db'];
