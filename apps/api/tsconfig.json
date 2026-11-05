@@ -2,6 +2,7 @@
   "extends": "@menu-ar/config/tsconfig.node.json",
   "compilerOptions": {
     "module": "commonjs",
+    "moduleResolution": "node",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,

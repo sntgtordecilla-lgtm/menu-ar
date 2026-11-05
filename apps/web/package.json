@@ -10,9 +10,20 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@menu-ar/shared": "workspace:*"
+    "@menu-ar/shared": "workspace:*",
+    "@google/model-viewer": "^4.1.0",
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@menu-ar/config": "workspace:*"
+    "@menu-ar/config": "workspace:*",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.3.3"
   }
 }
